@@ -1,0 +1,795 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Convertible | typesafe-units</title>
+	<meta name="description" content="Documentation for typesafe-units">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">typesafe-units</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">typesafe-units</a>
+				</li>
+				<li>
+					<a href="Convertible.html">Convertible</a>
+				</li>
+			</ul>
+			<h1>Class Convertible</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A convertible combines a number with a unit.
+							It offers several methods to convert itself into
+							different units and therefore is the key concept behind converting
+						in <em>simple-units</em>.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Convertible</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="Convertible.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Convertible.html#unit" class="tsd-kind-icon">unit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Convertible.html#value" class="tsd-kind-icon">value</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#as" class="tsd-kind-icon">as</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#asBest" class="tsd-kind-icon">as<wbr>Best</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#compare" class="tsd-kind-icon">compare</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#copy" class="tsd-kind-icon">copy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#eq" class="tsd-kind-icon">eq</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#format" class="tsd-kind-icon">format</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#gt" class="tsd-kind-icon">gt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#gte" class="tsd-kind-icon">gte</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#lt" class="tsd-kind-icon">lt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#lte" class="tsd-kind-icon">lte</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#possibilities" class="tsd-kind-icon">possibilities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#to" class="tsd-kind-icon">to</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="Convertible.html#toString" class="tsd-kind-icon">to<wbr>String</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Convertible<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, unit<span class="tsd-signature-symbol">: </span><a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L77">Convertible.ts:77</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a convertible with the passed value and unit.
+										It is not recommended to create a convertible this way. Instead
+									use the collection&#39;s <code>.from(value: number, unit: string)</code> or <code>.Convertible(value: number, unit: string)</code> method.</p>
+								</div>
+								<p><strong>Recommended way to create a convertible</strong>:</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">units</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;simple-units&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;m&quot;</span><span style="color: #000000">);</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000">); </span><span style="color: #008000">// Output: 12</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">unit</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">()); </span><span style="color: #008000">// Output: m</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the convertible&#39;s value</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>unit: <a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the convertible&#39;s unit</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="unit" class="tsd-anchor"></a>
+					<h3>unit</h3>
+					<div class="tsd-signature tsd-kind-icon">unit<span class="tsd-signature-symbol">:</span> <a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L26">Convertible.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The convertible&#39;s unit. Changes through converting.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L22">Convertible.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The convertible&#39;s value. Changes through converting.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="as" class="tsd-anchor"></a>
+					<h3>as</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">as<span class="tsd-signature-symbol">(</span>unit<span class="tsd-signature-symbol">: </span><a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UnitString</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L157">Convertible.ts:157</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the convertible to the passed unit and returns the convertible itself.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;°C&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">as</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;K&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Output: 261.15</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">unit</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">());</span>
+<span style="color: #008000">// Output: K</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>unit: <a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UnitString</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the target unit</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h4>
+							<p>the convertible itself</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="asBest" class="tsd-anchor"></a>
+					<h3>as<wbr>Best</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Best<span class="tsd-signature-symbol">(</span>remainInUnitSystem<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L181">Convertible.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the convertible to the best possible unit. In this case the best means having as few digits
+									as possible before the decimal point. Returns the convertible itself.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;m&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">asBest</span><span style="color: #000000">();</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Output: 1</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">unit</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">());</span>
+<span style="color: #008000">// Output: km</span>
+</code></pre>
+										<p>By default the convertible remains in the same unit system. If <code>false</code> is passed, this behaviour is disabled.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>remainInUnitSystem: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whether to remain in the same unit system (default is <code>true</code>)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h4>
+							<p>the convertible itself</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="compare" class="tsd-anchor"></a>
+					<h3>compare</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L285">Convertible.ts:285</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compares this convertible semantically to another. Returns <code>-1</code>, <code>0</code>,
+										or <code>1</code> as this convertible is less than, equal to, or greater
+									than the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
+							<p><code>-1</code>, <code>0</code>, or <code>1</code> as this convertible is less than, equal to, or greater
+							than the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3>copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L273">Convertible.ts:273</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a copy of the convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h4>
+							<p>a copy of the convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="eq" class="tsd-anchor"></a>
+					<h3>eq</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">eq<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L301">Convertible.ts:301</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether this convertible is semantically equal to the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether this convertible is semantically equal to the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="format" class="tsd-anchor"></a>
+					<h3>format</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">(</span>format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, formatOptions<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FormatOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L252">Convertible.ts:252</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the convertible as formatted string.</p>
+								</div>
+								<p>The first argument specifies the <em>string&#39;s format</em> (see example), the second one <em>additional format options</em>.</p>
+								<p>Currently there is only the format option <code>length</code>. Setting this to <code>&quot;long&quot;</code> will result in a long unit symbol
+								(e.g. &quot;meter&quot; or &quot;meters&quot;), <code>&quot;short&quot;</code> will result in a short unit symbol (e.g. &quot;m&quot;).</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">12.2323123</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;kt&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #795E26">format</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;%.2f %s&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">length:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;long&quot;</span><span style="color: #000000"> }));</span>
+<span style="color: #008000">// Output: 12.23 knots</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>format: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the string&#39;s format</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> formatOptions: <span class="tsd-signature-type">FormatOptions</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>additional format options</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>the convertible as formatted string</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gt" class="tsd-anchor"></a>
+					<h3>gt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gt<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L343">Convertible.ts:343</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether this convertible is semantically greater than the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether this convertible is semantically greater than the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gte" class="tsd-anchor"></a>
+					<h3>gte</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">gte<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L357">Convertible.ts:357</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether this convertible is semantically greater than or equal to the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether this convertible is semantically greater than or equal to the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lt" class="tsd-anchor"></a>
+					<h3>lt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">lt<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L315">Convertible.ts:315</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether this convertible is semantically less than the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether this convertible is semantically less than the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="lte" class="tsd-anchor"></a>
+					<h3>lte</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">lte<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L329">Convertible.ts:329</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether this convertible is semantically less than or equal to the passed convertible.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="Convertible.html" class="tsd-signature-type" data-tsd-kind="Class">Convertible</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the convertible to be compared</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether this convertible is semantically less than or equal to the passed convertible</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="possibilities" class="tsd-anchor"></a>
+					<h3>possibilities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">possibilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">UnitString</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L96">Convertible.ts:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an array of units to which the convertible can be converted.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;kt&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #AF00DB">for</span><span style="color: #000000">(</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">unit</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #795E26">possibilities</span><span style="color: #000000">()){</span>
+<span style="color: #000000">   </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">unit</span><span style="color: #000000">); </span><span style="color: #008000">// Output: Ym/a, Zm/a, Em/a, Pm/a, ...</span>
+<span style="color: #000000">}</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">UnitString</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>an array of units to which the convertible can be converted</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="to" class="tsd-anchor"></a>
+					<h3>to</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">(</span>unit<span class="tsd-signature-symbol">: </span><a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UnitString</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L120">Convertible.ts:120</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the convertible to the passed unit and returns the conversion&#39;s result.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;°C&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #795E26">to</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;K&quot;</span><span style="color: #000000">));</span>
+<span style="color: #008000">// Output: 261.15</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Output: 261.15</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #001080">unit</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">());</span>
+<span style="color: #008000">// Output: K</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>unit: <a href="Unit.html" class="tsd-signature-type" data-tsd-kind="Class">Unit</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">UnitString</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the target unit</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the conversion&#39;s result</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toString" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/harrydehix/simple-units/blob/c7e551c/src/Convertible.ts#L221">Convertible.ts:221</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the convertible as short string.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;meter&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #795E26">toString</span><span style="color: #000000">());</span>
+<span style="color: #008000">// Output: 1000m</span>
+
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Output: 1000m (but in blue :D)</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="Collection.html" class="tsd-kind-icon">Collection</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="Convertible.html" class="tsd-kind-icon">Convertible</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="Convertible.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Convertible.html#unit" class="tsd-kind-icon">unit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Convertible.html#value" class="tsd-kind-icon">value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#as" class="tsd-kind-icon">as</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#asBest" class="tsd-kind-icon">as<wbr>Best</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#compare" class="tsd-kind-icon">compare</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#copy" class="tsd-kind-icon">copy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#eq" class="tsd-kind-icon">eq</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#format" class="tsd-kind-icon">format</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#gt" class="tsd-kind-icon">gt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#gte" class="tsd-kind-icon">gte</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#lt" class="tsd-kind-icon">lt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#lte" class="tsd-kind-icon">lte</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#possibilities" class="tsd-kind-icon">possibilities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#to" class="tsd-kind-icon">to</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="Convertible.html#toString" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="Group.html" class="tsd-kind-icon">Group</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="Unit.html" class="tsd-kind-icon">Unit</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

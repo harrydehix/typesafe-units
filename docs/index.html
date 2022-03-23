@@ -1,0 +1,752 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>typesafe-units</title>
+	<meta name="description" content="Documentation for typesafe-units">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">typesafe-units</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>typesafe-units</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#typesafe-units" id="typesafe-units" style="color: inherit; text-decoration: none;">
+					<h1>typesafe-units</h1>
+				</a>
+				<p>unit converter with focus on type-safety, simplicity and performance.</p>
+				<a href="#key-features" id="key-features" style="color: inherit; text-decoration: none;">
+					<h1>Key Features</h1>
+				</a>
+				<a href="#converting" id="converting" style="color: inherit; text-decoration: none;">
+					<h2>Converting</h2>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">converted</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">from</span><span style="color: #000000">(</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;cm&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">to</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;in&quot;</span><span style="color: #000000">);</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">converted</span><span style="color: #000000">);</span>
+<span style="color: #008000">// Output: 1.1811</span>
+</code></pre>
+				<a href="#comparing" id="comparing" style="color: inherit; text-decoration: none;">
+					<h2>Comparing</h2>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">c1</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">100</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;kilometer&quot;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">c2</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">1000</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;meter&quot;</span><span style="color: #000000">);</span>
+
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">c1</span><span style="color: #000000">.</span><span style="color: #795E26">lt</span><span style="color: #000000">(</span><span style="color: #001080">c2</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">c1</span><span style="color: #0000FF">}</span><span style="color: #A31515"> is less than </span><span style="color: #0000FF">${</span><span style="color: #001080">c2</span><span style="color: #0000FF">}</span><span style="color: #A31515">!`</span><span style="color: #000000">);</span>
+<span style="color: #000000">} </span><span style="color: #AF00DB">else</span><span style="color: #000000"> </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">c1</span><span style="color: #000000">.</span><span style="color: #795E26">eq</span><span style="color: #000000">(</span><span style="color: #001080">c2</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">c1</span><span style="color: #0000FF">}</span><span style="color: #A31515"> and </span><span style="color: #0000FF">${</span><span style="color: #001080">c2</span><span style="color: #0000FF">}</span><span style="color: #A31515"> are equal!`</span><span style="color: #000000">);</span>
+<span style="color: #000000">} </span><span style="color: #AF00DB">else</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">c1</span><span style="color: #0000FF">}</span><span style="color: #A31515"> is greater than </span><span style="color: #0000FF">${</span><span style="color: #001080">c2</span><span style="color: #0000FF">}</span><span style="color: #A31515">!`</span><span style="color: #000000">);</span>
+<span style="color: #000000">}</span>
+<span style="color: #008000">// Output: 100km is greater than 1000m!</span>
+</code></pre>
+				<a href="#formatting" id="formatting" style="color: inherit; text-decoration: none;">
+					<h2>Formatting</h2>
+				</a>
+				<pre><code class="language-typescript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">convertible</span><span style="color: #000000"> = </span><span style="color: #001080">units</span><span style="color: #000000">.</span><span style="color: #795E26">Convertible</span><span style="color: #000000">(</span><span style="color: #098658">12.2323123</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;kt&quot;</span><span style="color: #000000">);</span>
+<span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">convertible</span><span style="color: #000000">.</span><span style="color: #795E26">format</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;%.2f %s&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">length:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;long&quot;</span><span style="color: #000000"> }));</span>
+<span style="color: #008000">// Output: 12.23 knots</span>
+</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h1>Documentation</h1>
+				</a>
+				<p>Read useful guides <a href="https://github.com/harrydehix/typesafe-units/tree/main/guides">here</a>.
+				Read the full documentation <a href="https://harrydehix.github.io/typesafe-units/">here</a>.</p>
+				<a href="#supported-units" id="supported-units" style="color: inherit; text-decoration: none;">
+					<h1>Supported Units</h1>
+				</a>
+				<a href="#area" id="area" style="color: inherit; text-decoration: none;">
+					<h2>Area</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0m²</th>
+							<td><code>%0m^2, %0m2, square %0meter, sq %0meter, sq %0metre, square %0metre, square %0meters, sq %0meters, sq %0metres, square %0metres</code></td>
+							<td>
+								<p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta)</p>
+							</td>
+						</tr>
+						<tr>
+							<th>%0a</th>
+							<td><code>%0are, %0ares</code></td>
+							<td>
+								<p>
+									<b>0:</b>
+									<code>c</code>(centiare), <code>d</code>(deciare), <code>da</code>(decare), <code>h</code>(hectare)
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>in²</th>
+							<td><code>″², in^2, ″^2, ″2, in2, square inch, sq inch, square inches, sq inches</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ft²</th>
+							<td><code>ft^2, ft2, square foot, sq foot, square feet, sq feet</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>mi²</th>
+							<td><code>mi^2, mi2, square mile, sq mile, square miles, sq miles</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>yd²</th>
+							<td><code>yd^2, yd2, square yard, sq yard, square yards, sq yards</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ac</th>
+							<td><code>acre, acres</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#current" id="current" style="color: inherit; text-decoration: none;">
+					<h2>Current</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0A</th>
+							<td><code>%0ampere, %0ampere</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#digital" id="digital" style="color: inherit; text-decoration: none;">
+					<h2>Digital</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0B</th>
+							<td><code>%0byte, %0bytes</code></td>
+							<td>
+								<p>
+									<b>0: </b>
+									<a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>k</code>(kilo) to <code>Y</code> (yotta) and <a href="https://en.wikipedia.org/wiki/Binary_prefix">IEC-Prefixes</a> from <code>Ki</code> (kibi) to <code>Yi</code> (yobi)
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>%0b</th>
+							<td><code>%0bit, %0bits</code></td>
+							<td><p>
+									<b>0: </b>
+									<a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>k</code>(kilo) to <code>Y</code> (yotta) and <a href="https://en.wikipedia.org/wiki/Binary_prefix">IEC-Prefixes</a> from <code>Ki</code> (kibi) to <code>Yi</code> (yobi)
+							</p></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#energy" id="energy" style="color: inherit; text-decoration: none;">
+					<h2>Energy</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0J</th>
+							<td><code>%0joule, %0joule, %0joules</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>%0W%1</th>
+							<td><code>%0watt-%1, %0watt-%1</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p>
+							<p><b>1: </b>h (hour, hours), s (second, seconds)</p></td>
+						</tr>
+						<tr>
+							<th>%0eV</th>
+							<td><code>%0electronvolt, %0electronvolts</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>%0cal</th>
+							<td><code>%0calorie, %0calories</code></td>
+							<td><p><b>0: </b>k (kilo)</p></td>
+						</tr>
+						<tr>
+							<th>erg</th>
+							<td><code>ergs</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#force" id="force" style="color: inherit; text-decoration: none;">
+					<h2>Force</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0N</th>
+							<td><code>%0newton</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#length" id="length" style="color: inherit; text-decoration: none;">
+					<h2>Length</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0m</th>
+							<td><code>%0meter, %0meters, %0metre, %0metres</code></td>
+							<td>
+								<p>
+									<b>0: </b>
+									<a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta)
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>in</th>
+							<td><code>″, inch, inches</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>yd</th>
+							<td><code>yard, yards</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ly</th>
+							<td><code>light-year, lightyear, light-years, lightyears</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ft</th>
+							<td><code>foot, feet</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>mi</th>
+							<td><code>mi., mile, miles</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#mass" id="mass" style="color: inherit; text-decoration: none;">
+					<h2>Mass</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0g</th>
+							<td><code>%0gram, %0gramme, %0grams</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>%0mt</th>
+							<td><code>%0metric ton, %0metric tons</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>da</code> (deca) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>t</th>
+							<td><code>ton, short ton, tons, short tons</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>oz</th>
+							<td><code>oz av, ounce, avoirdupois ounce, ounces, avoirdupois ounces</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>lb</th>
+							<td><code>lb av, pound, avoirdupois pound, pound-mass, pounds, avoirdupois pounds</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#parts-per" id="parts-per" style="color: inherit; text-decoration: none;">
+					<h2>Parts-Per</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>ppm</th>
+							<td><code>parts per million, part per million</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ppb</th>
+							<td><code>parts per billion, part per billion</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ppt</th>
+							<td><code>parts per trillion, part per trillion</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ppq</th>
+							<td><code>parts per quadrillion, part per quadrillion</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#power" id="power" style="color: inherit; text-decoration: none;">
+					<h2>Power</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0W</th>
+							<td><code>%0watt, %0watts</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>μ</code> (micro) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>%0J/%1</th>
+							<td><code>%0joule/%1, %0joules/%1</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>μ</code> (micro) to <code>Y</code> (yotta) </p>
+							<p><b>1: </b>All time units.</p></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#pressure" id="pressure" style="color: inherit; text-decoration: none;">
+					<h2>Pressure</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0Pa</th>
+							<td><code>%0pascal, %0pascals</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>μ</code> (micro) to <code>Y</code> (yotta) </p></td>
+						</tr>
+						<tr>
+							<th>bar</th>
+							<td><code>Bar, Bars</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>torr</th>
+							<td><code>Torr, Torrs</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>atm</th>
+							<td><code>standard atmosphere, standard atmospheres</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>Mpsi</th>
+							<td><code>megapound per square inch, megapounds per square inch</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>psi</th>
+							<td><code>lb. p. sq. in., psia, psig, pound-force per square inch, pound per square inch, pounds per square inch</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ksi</th>
+							<td><code>kilopound per square inch, kilopounds per square inch</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>inHg</th>
+							<td><code>inch of mercury, inches of mercury</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#speed" id="speed" style="color: inherit; text-decoration: none;">
+					<h2>Speed</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0m/%1</th>
+							<td><code>%0meter/%1, %0metre/%1, %0meter per %1, %0metre per %1, %0meters/%1, %0metres/%1, %0meters per %1, %0metres per %1</code></td>
+							<td>
+								<p>
+									<b>0:</b> <a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta)
+								</p>
+								<p>
+									<b>1:</b> Any time unit
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th>ft/%0</th>
+							<td><code>foot/%0, foot per %0, feet/%0, feet per %0</code></td>
+							<td><p><b>0: </b>Any time unit</p></td>
+						</tr>
+						<tr>
+							<th>mi/%0</th>
+							<td><code>mp%0, mile/%0, mile per %0, miles/%0, miles per %0</code></td>
+							<td><p><b>0: </b>Any time unit</p></td>
+						</tr>
+						<tr>
+							<th>kt</th>
+							<td><code>kn, knot, knots</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>Bft</th>
+							<td><code>Beaufort</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>Ma</th>
+							<td><code>M, mach, Mach</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>c</th>
+							<td><code>lightspeed, light-speed</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#temperature" id="temperature" style="color: inherit; text-decoration: none;">
+					<h2>Temperature</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>°C</th>
+							<td><code>degree Celsius, degrees Celsius</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>°F</th>
+							<td><code>degree Fahrenheit, degrees Fahrenheit</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>°R</th>
+							<td><code>degree Rankine, degrees Rankine</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>K</th>
+							<td><code>Kelvin</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#time" id="time" style="color: inherit; text-decoration: none;">
+					<h2>Time</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0s</th>
+							<td><code>%0second, %0seconds</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>d</code> (deci) </p></td>
+						</tr>
+						<tr>
+							<th>min</th>
+							<td><code>minute, minutes</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>h</th>
+							<td><code>hour, hours</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>d</th>
+							<td><code>day, days</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>wk</th>
+							<td><code>week, weeks</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>mth</th>
+							<td><code>month, months</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>a</th>
+							<td><code>year, years</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#voltage" id="voltage" style="color: inherit; text-decoration: none;">
+					<h2>Voltage</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0V</th>
+							<td><code>%0volt, %0volts</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>Y</code> (yotta) </p></td>
+						</tr>
+					</tbody>
+				</table>
+				<a href="#volume" id="volume" style="color: inherit; text-decoration: none;">
+					<h2>Volume</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>unit</th>
+							<th>synonyms</th>
+							<th>%</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>%0m³</th>
+							<td><code>%0m^3, %0m3, cubic %0meter, cubic %0meters, cubic %0metre, cubic %0metres</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>y</code> (yocto) to <code>d</code> (deci) </p></td>
+						</tr>
+						<tr>
+							<th>%0l</th>
+							<td><code>%0liter, %0liters, %0litre, %0litres</code></td>
+							<td><p><b>0: </b><a href="https://en.wikipedia.org/wiki/Metric_prefix#List_of_SI_prefixes">SI-Prefixes</a> from <code>m</code> (milli) to <code>k</code> (kilo) </p></td>
+						</tr>
+						<tr>
+							<th>in³</th>
+							<td><code>″³, in^3, ″^3, ″3, in3, cubic inch, cubic inches</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>ft³</th>
+							<td><code>ft^3, ft3, cubic foot, cubic feet</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>yd³</th>
+							<td><code>yd^3, yd3, cubic yard, cubic yards</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>c</th>
+							<td><code>cup, cups</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>tsp</th>
+							<td><code>teaspoon, teaspoons</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>tbsp</th>
+							<td><code>tablespoon, tablespoons</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>fl oz</th>
+							<td><code>fl-oz, fluid ounce, fluid ounces</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>qt</th>
+							<td><code>quart, quarts</code></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th>gal</th>
+							<td><code>gallon, gallons</code></td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/Collection.html" class="tsd-kind-icon">Collection</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Convertible.html" class="tsd-kind-icon">Convertible</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Group.html" class="tsd-kind-icon">Group</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/Unit.html" class="tsd-kind-icon">Unit</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
